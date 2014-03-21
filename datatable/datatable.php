@@ -9,10 +9,10 @@
 <style type="text/css" title="currentStyle">
 	@import "css/page.css";
 	@import "css/table.css";
+example_length{ display: none;}
 </style>
 <body>
 <div id="dt_example">
-<h1>Test de datatable</h1>
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
 	<thead>
 		<tr>
