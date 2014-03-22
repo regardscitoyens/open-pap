@@ -96,7 +96,7 @@
       <div id="map-container">
         <svg id="map"></svg>
       </div>
-	 <p style="text-align: right;"><a href="#" onClick="return false;" id="map-replay">Rejouter l'animation</a></p>
+	 <p style="text-align: right;"><a href="#" onClick="return false;" id="map-replay">Rejouer l'animation</a></p>
     <div id="container">
       <form>
         <p>

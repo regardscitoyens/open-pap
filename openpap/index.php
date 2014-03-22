@@ -47,9 +47,9 @@
 
 			<div id="content" class="grid_9">
 				<h1>Institut français</h1>
-				<h2>Le plan d'aide à la publication</h2>
-			        <p>L’Institut français soutient le travail et l’implication d’éditeurs étrangers qui mènent une politique de publication de titres traduits du français, rendant ainsi possible l’accès d’un public non francophone à la création et la pensée françaises contemporaines.</p>
-			        <p>Depuis 25 ans, les Programmes d'aide à la publication (PAP) ont permis de contribuer à la traduction de près de 20 000 titres d’auteurs français dans 80 pays.</p>
+				<h2>Le Plan d'Aide à la Publication</h2>
+			        <p>L’Institut français soutient le travail et l’implication d’éditeurs étrangers qui mènent une politique de publication d'ouvrages traduits du français, rendant ainsi possible l’accès d’un public non francophone à la création et la pensée françaises contemporaines.</p>
+			        <p>Depuis 25 ans, les Programmes d'Aide à la Publication (PAP) ont permis de contribuer à la traduction de près de 20&nbsp;000 titres d’auteurs français dans 80 pays.</p>
 			        <p>Ce soutien à l’écrit est l’un des outils majeurs dans le développement de l’influence de la littérature et de la pensée françaises à travers le monde.</p>
 			</div>
 			<div id="decorative" class="grid_5 omega">
@@ -115,9 +115,9 @@
 		<div class="container clearfix">
 			<div id="content" class="grid_9">
 				<h2>Credits</h2>
-                                <p>Le projet OpenPAP est un projet du <a href="http://www.institutfrancais.com/fr/livre-et-promotion-des-savoirs-0">département du livre et de promotion des savoir</a> de l'<a href="http://www.institutfrancais.com/">Institut français</a>. Il a été réalisé techniquement réalisé par Regards Citoyens.</p>
-                                <p>Les données utilisées pour réaliser ce travail sont <a href="data/data.csv">librement téléchargeable sous la licence ODBL</a></p>
-                                <p><a href="http://jalxob.com/cool-kitten/">Cool kitten</a>, <a href="https://datatables.net/">DataTables</a>, <a href="https://github.com/shawnbot/d3-cartogram/">cartogram.js</a>, <a href="http://d3js.org/">d3.js</a>, <a href="http://github.com/mbostock/topojson" target="_blank">TopoJSON</a>, <a href="http://www.geonames.org" target="_blank">geonames.org</a>, <a href="http://d3js.org">d3.js</a> et <a href="http://colorbrewer2.org" target="_blank">colorbrewer</a> ont été utilisés.</p>
+                                <p>Le projet OpenPAP est un projet du <a href="http://www.institutfrancais.com/fr/livre-et-promotion-des-savoirs-0">département Livre et Promotion des savoirs</a> de l'<a href="http://www.institutfrancais.com/">Institut français</a>. Il a été réalisé techniquement par Regards Citoyens.</p>
+                                <p>Les données utilisées pour réaliser ce travail sont <a href="data/data.csv">librement téléchargeable< sous la licence ODBL</a>.</p>
+                                <p><a href="http://jalxob.com/cool-kitten/">Cool kitten</a>, <a href="https://datatables.net/">DataTables</a>, <a href="https://github.com/shawnbot/d3-cartogram/">cartogram.js</a>, <a href="http://d3js.org/">d3.js</a>, <a href="http://github.com/mbostock/topojson" target="_blank">TopoJSON</a>, <a href="http://www.geonames.org" target="_blank">geonames.org</a> et <a href="http://colorbrewer2.org" target="_blank">colorbrewer</a> ont été utilisés.</p>
                                 <p>Les logiciels développés pour ce projet sont des logiciels libres téléchargeables sur <a href="https://github.com/regardscitoyens/open-pap">github</a>.</p>
 			</div>
 
