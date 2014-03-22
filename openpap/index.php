@@ -65,7 +65,7 @@
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
 				<h2>Répartition des aides entre 2008 et 2013</h2>
-                                <p>Répartition géographique des aides à la cession de droits accordées entre 2008 et 2013 par l'Institut français pour la traduction d'oeuvre d'auteurs français ou dédités par des éditeurs français</p>
+                                <p>Répartition géographique des aides à la cession de droits accordées entre 2008 et 2013 par l'Institut français pour la traduction d'oeuvres d'auteurs français ou dédités par des éditeurs français.</p>
 			        <div id="map-container">
 			        <form id="map-search">
 			        <input name="q" id="q" type="text" class="inputtext" placeholder="année, auteur, titre, éditeur, ..."/><input type="submit" value="Rechercher"/>
