@@ -134,8 +134,18 @@ p {
 
 #langues .table, #genres .table { 
          max-height: 520px;
-         overflow: overlay;
+         overflow: auto;
 
+}
+#map-container { 
+          width: 700px;
+          margin: auto;
+}
+#map-search { 
+     padding-left: 25px;     
+}
+#map-search #q { 
+     width: 550px;
 }
 
 /* Tablet */

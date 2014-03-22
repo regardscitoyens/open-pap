@@ -64,12 +64,13 @@
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h2>Répartition des aides à la cession de droits accordées entre 2008 et 2013</h2>
-			        <form id="search">
-			        <input name="q" id="q" type="text"/><input type="submit" value="Rechercher"/>
-			        <form>
-			        <div style="text-align: center;">
-			        <iframe id="cartogram" scrolling="no" style="border: 0px; margin: auto;" width="800" height="560" src="../cartogram/cartogram.php"></iframe>
+				<h2>Répartition des aides entre 2008 et 2013</h2>
+                                <p>Répartition géographique des aides à la cession de droits accordées entre 2008 et 2013 par l'Institut français pour la traduction d'oeuvre d'auteurs français ou dédités par des éditeurs français</p>
+			        <div id="map-container">
+			        <form id="map-search">
+			        <input name="q" id="q" type="text" class="inputtext" placeholder="année, auteur, titre, éditeur, ..."/><input type="submit" value="Rechercher"/>
+			        </form>
+			        <iframe id="cartogram" scrolling="no" style="border: 0px; margin: auto;" width="700" height="560" src="../cartogram/cartogram.php"></iframe>
 				<script>
 				  $('#search').submit(function() {
 				     url = $('#cartogram').attr('src').replace(/cartogram.php.*/, 'cartogram.php?q='+$('#q').val());
