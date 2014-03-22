@@ -5,6 +5,8 @@ function select_data($element_id, $nb_id = 20, $q = '') {
     $i = 0;
     $elemnts = array();
     $q = str_replace('/', '\\/', $q);
+    $q = str_replace('(', '\\(', $q);
+    $q = str_replace(')', '\\)', $q);
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
       if (!$q || (($str = join(',', $data)) && preg_match('/'.$q.'/i', $str))) {
 	$data[20] = $i++;
