@@ -9,7 +9,11 @@
 <style type="text/css" title="currentStyle">
 	@import "css/page.css";
 	@import "css/table.css";
-example_length{ display: none;}
+</style>
+<style>
+#example_length {
+	display: none;
+}
 </style>
 <body>
 <div id="dt_example">
