@@ -38,11 +38,14 @@ jQuery(document).ready(function ($) {
 
 
 
-    links.click(function (e) {
+    links.click(function(e) { gotoslide(e, $(this)); });
+    $('.internallink').click(function(e) { gotoslide(e, $(this)); return false; });
+
+    function gotoslide(e, obj) {
         e.preventDefault();
-        dataslide = $(this).attr('data-slide');
+        dataslide = obj.attr('data-slide');
         goToByScroll(dataslide);
-    });
+    };
 
     button.click(function (e) {
         e.preventDefault();

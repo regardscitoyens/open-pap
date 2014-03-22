@@ -53,7 +53,7 @@
 			        <p>Ce soutien à l’écrit est l’un des outils majeurs dans le développement de l’influence de la littérature et de la pensée françaises à travers le monde.</p>
 			</div>
 			<div id="decorative" class="grid_5 omega">
-				<a href="#slide2">Découvrir la répartition des aides accordées</a>
+				<a class="internallink" data-slide="2" href="#slide2">Découvrir la répartition des aides accordées</a>
 			</div>
 
 		</div>
