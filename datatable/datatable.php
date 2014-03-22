@@ -14,6 +14,7 @@
 #example_length {
 	display: none;
 }
+th{color: #008AC9;}
 </style>
 <body>
 <div id="dt_example">
@@ -34,17 +35,6 @@
 	<tbody>
 	</tbody>
 	<tfoot>
-		<tr>
-			<th>Année</th>
-			<th>Pays</th>
-			<th>Auteur</th>
-			<th>Titre</th>
-			<th>Éditeur français</th>
-			<th>Éditeur local</th>
-			<th>Montant accordé</th>
-			<th>Genre</th>
-			<th>Langue</th>
-		</tr>
 	</tfoot>
 </table>
 <script language="javascript">
