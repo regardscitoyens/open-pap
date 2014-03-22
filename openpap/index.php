@@ -47,9 +47,9 @@
 
 			<div id="content" class="grid_9">
 				<h1>Institut français</h1>
-				<h2>Le plan d'aide à la publication</h2>
-			        <p>L’Institut français soutient le travail et l’implication d’éditeurs étrangers qui mènent une politique de publication de titres traduits du français, rendant ainsi possible l’accès d’un public non francophone à la création et la pensée françaises contemporaines.</p>
-			        <p>Depuis 25 ans, les Programmes d'aide à la publication (PAP) ont permis de contribuer à la traduction de près de 20 000 titres d’auteurs français dans 80 pays.</p>
+				<h2>Le Plan d'Aide à la Publication</h2>
+			        <p>L’Institut français soutient le travail et l’implication d’éditeurs étrangers qui mènent une politique de publication d'ouvrages traduits du français, rendant ainsi possible l’accès d’un public non francophone à la création et la pensée françaises contemporaines.</p>
+			        <p>Depuis 25 ans, les Programmes d'Aide à la Publication (PAP) ont permis de contribuer à la traduction de près de 20&nbsp;000 titres d’auteurs français dans 80 pays.</p>
 			        <p>Ce soutien à l’écrit est l’un des outils majeurs dans le développement de l’influence de la littérature et de la pensée françaises à travers le monde.</p>
 			</div>
 			<div id="decorative" class="grid_5 omega">
