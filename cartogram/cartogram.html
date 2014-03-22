@@ -288,7 +288,7 @@
             try{
             return d.properties['FULLNAME'];
 	    }catch(e){
-		return "no data";
+		return "rien pour ce pays";
 	    }
           });
           
@@ -343,7 +343,7 @@
             .text(function(d) {
               try{
               return [d.properties.FULLNAME, value(d)].join(" : ") + field.unit;
-              }catch(e){return "No data";}
+              }catch(e){return "Rien pour ce pays";}
             });
 
         worldcountries.transition()

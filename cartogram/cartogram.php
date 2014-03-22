@@ -115,7 +115,7 @@
           })(),
           fields = [
             {name: "Aucune", id: "none"},
-            {name: "Nombre d'aides accordées", id: "aide", key: "AIDESACCORDEES", unit: " <?php if (isset($_GET['by_editor']) && $_GET['by_editor']) { echo " éditeurs"; } else { echo " traductions";} ?>"},
+            {name: "Nombre d'aides accordées", id: "aide", key: "AIDESACCORDEES", unit: " <?php if (isset($_GET['by_editor']) && $_GET['by_editor']) { echo " éditeur(s)"; } else { echo " traduction(s)";} ?>"},
             ],
           fieldsById = d3.nest()
             .key(function(d) { return d.id; })
@@ -243,7 +243,7 @@
             try{
                 return d.properties['FULLNAME'];
 	    }catch(e){
-		return "no data";
+		return "rien pour ce pays";
 	    }
           });
           
@@ -298,7 +298,7 @@
             .text(function(d) {
               try{
               return [d.properties.FULLNAME, value(d)].join(" : ") + field.unit;
-              }catch(e){return "No data";}
+              }catch(e){return "Rien pour ce pays";}
             });
 
         worldcountries.transition()
