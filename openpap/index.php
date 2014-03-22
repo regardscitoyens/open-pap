@@ -99,7 +99,7 @@
 	<div class="slide fondif" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h2>Genre et langues</h2>
+				<h2>Genres et langues</h2>
                           <div id="grouptable">
 			  <?php include("grouptable.php"); ?>
                           </div>
