@@ -30,22 +30,8 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    function goToByScroll(dataslide) {
-        htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
-        }, 2000, 'easeInOutQuint');
-    }
-
-
-
     links.click(function(e) { gotoslide(e, $(this)); });
     $('.internallink').click(function(e) { gotoslide(e, $(this)); return false; });
-
-    function gotoslide(e, obj) {
-        e.preventDefault();
-        dataslide = obj.attr('data-slide');
-        goToByScroll(dataslide);
-    };
 
     button.click(function (e) {
         e.preventDefault();
@@ -56,3 +42,17 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+function gotoslide(e, obj) {
+        e.preventDefault();
+        dataslide = obj.attr('data-slide');
+        goToByScroll(dataslide);
+}
+
+function goToByScroll(dataslide) {
+        htmlbody.animate({
+            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
+        }, 2000, 'easeInOutQuint');
+}
+
+

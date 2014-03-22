@@ -70,12 +70,22 @@
 			        <form id="map-search">
 			        <input name="q" id="q" type="text" class="inputtext" placeholder="année, auteur, titre, éditeur, ..."/><input type="submit" value="Rechercher"/>
 			        </form>
-			        <iframe id="cartogram" scrolling="no" style="border: 0px; margin: auto;" width="700" height="560" src="../cartogram/cartogram.php"></iframe>
+			        <iframe id="cartogram" scrolling="no" style="border: 0px; margin: auto;" width="700" height="560" data-src="../cartogram/cartogram.php" src="images/cartogram.jpg"></iframe>
 				<script>
 				  $('#map-search').submit(function() {
-				     url = $('#cartogram').attr('src').replace(/cartogram.php.*/, 'cartogram.php?q='+$('#q').val());
-				     $('#cartogram').attr('src', url);
-				     return false;
+				      url = '../cartogram/cartogram.php?q='+$('#q').val();
+				      if (!$('#cartogram').attr('src').match(/jpg/)) {
+					$('#cartogram').attr('src', url);
+				      }else{
+					$('#cartogram').attr('data-src', url);
+				      }
+				      return false;
+				  });
+                                  $(window).scroll(function() {
+				      	var windowpos = $(window).scrollTop();
+					if ( ($('#cartogram').attr('src').match(/jpg/)) && (windowpos >= $('#slide2').position().top - 100) && (windowpos <= $('#slide2').position().top + 100)) {
+					  $('#cartogram').attr('src', $('#cartogram').attr('data-src'));
+					}
 				  });
 				</script>
 				</div>
@@ -93,6 +103,14 @@
                           <div id="grouptable">
 			  <?php include("grouptable.php"); ?>
                           </div>
+<script>
+   $('.tocartogram').click(function(e){
+       $('#q').val($(this).attr('data-q'));
+       $('#map-search').submit();
+       setTimeout(function(){goToByScroll('2');}, 100);
+       return false;
+   });
+</script>
 			</div>
 
 		</div>
