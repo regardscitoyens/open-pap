@@ -4,6 +4,7 @@ function select_data($element_id, $nb_id = 20, $q = '') {
   if (($handle = fopen("../openpap/data/data.csv", "r")) !== FALSE) {
     $i = 0;
     $elemnts = array();
+    $q = str_replace('/', '\\/', $q);
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
       if (!$q || (($str = join(',', $data)) && preg_match('/'.$q.'/i', $str))) {
 	$data[20] = $i++;

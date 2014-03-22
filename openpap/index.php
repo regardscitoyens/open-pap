@@ -72,7 +72,7 @@
 			        </form>
 			        <iframe id="cartogram" scrolling="no" style="border: 0px; margin: auto;" width="700" height="560" src="../cartogram/cartogram.php"></iframe>
 				<script>
-				  $('#search').submit(function() {
+				  $('#map-search').submit(function() {
 				     url = $('#cartogram').attr('src').replace(/cartogram.php.*/, 'cartogram.php?q='+$('#q').val());
 				     $('#cartogram').attr('src', url);
 				     return false;
