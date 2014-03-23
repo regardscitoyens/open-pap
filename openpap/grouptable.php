@@ -4,13 +4,18 @@ include('data_access.php');
 $langues = select_data(8);
 $genres = select_data(7);
 
-echo "<div id='langues'><h3>Langues</h3><div class='table'><table>";
+$nbl = 0;
+foreach($langues as $l => $nb) {
+	$nbl += $nb;
+}
+
+echo "<div id='langues'><h3>Langues</h3><div class='tags'>";
 foreach($langues as $l => $nb) {
   if ($l) {
-    echo "<tr><td><a href='#' class='tocartogram' data-slide='2' data-q='$l'>$l</a></td><td>$nb</td></tr>";
+    echo " <span class='tag".round($nb/$nbl*100)."'><a href='#' class='tocartogram' alt='$l ($nb)' data-slide='2' data-q='$l'>$l</a></span> &nbsp; ";
   }
 }
-echo "</table></div></div>";
+echo "</div></div>";
 echo "<div id='genres'><h3>Genres</h3><div class='table'><table>";
 foreach($genres as $g => $nb) {
   if ($g) {

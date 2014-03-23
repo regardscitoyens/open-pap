@@ -128,6 +128,9 @@ p {
          width: 300px;
          float: right;
 }
+#langues .tags {
+	 text-align: center;
+}
 #genres{ 
          padding-top: 1px;
 }
@@ -218,6 +221,20 @@ p {
 }
 
 }
+
+.tag0 { font-size: 10px; }
+.tag1 { font-size: 12px; }
+.tag2 { font-size: 14px; }
+.tag3 { font-size: 16px; }
+.tag4 { font-size: 18px; }
+.tag5 { font-size: 20px; }
+.tag6 { font-size: 22px; }
+.tag7 { font-size: 24px; }
+.tag8 { font-size: 26px; }
+.tag9 { font-size: 28px; }
+.tag10 { font-size: 30px; }
+.tag11 { font-size: 32px; }
+.tag12 { font-size: 34px; }
 
 
 
