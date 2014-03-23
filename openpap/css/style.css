@@ -79,9 +79,8 @@ a:visited {
 
 
 h1 {
-	font-size: 3.8em;
+	font-size: 3.5em;
 	letter-spacing: -3px;
-	line-height: 0px;
 	color:#008ac9;
 	font-weight: 700;
 }
@@ -130,6 +129,14 @@ p {
 }
 #langues .tags {
 	 text-align: center;
+}
+
+#loupe { 
+         background-color: white;
+         border: 1px solid #008AC9;
+         color: #008AC9;
+         font-weight: bold;
+         position: absolute;
 }
 #genres{ 
          padding-top: 1px;

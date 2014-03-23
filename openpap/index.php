@@ -33,7 +33,7 @@
 				<ul class="navigation">
 					<li data-slide="1">Accueil</li>
 					<li data-slide="2">À travers le monde</li>
-					<li data-slide="3">Genre & langues</li>
+					<li data-slide="3">Genre et langues</li>
 					<li data-slide="4">Les données</li>
 				</ul>
 			</div>
@@ -45,15 +45,15 @@
 	<div class="slide fondif" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_9">
-				<h1>Institut français</h1>
-				<h2>Le Plan d'Aide à la Publication</h2>
+			<div id="content" class="grid_12">
+				<h1>Le Programme d'Aide à la Publication</h1>
 			        <p>L’Institut français soutient le travail et l’implication d’éditeurs étrangers qui mènent une politique de publication d'ouvrages traduits du français, rendant ainsi possible l’accès d’un public non francophone à la création et la pensée françaises contemporaines.</p>
 			        <p>Depuis 25 ans, les Programmes d'Aide à la Publication (PAP) ont permis de contribuer à la traduction de près de 20&nbsp;000 titres d’auteurs français dans 80 pays.</p>
 			        <p>Ce soutien à l’écrit est l’un des outils majeurs dans le développement de l’influence de la littérature et de la pensée françaises à travers le monde.</p>
+				<p>Les PAP ont soutenus plus de 2&nbsp;558 ouvrages depuis 2008. Ils ont permis à 1&nbsp;144 éditeurs étrangers de publier des titres traduits du français dans 63 pays 1&nbsp;294 auteurs français et francophones ont été traduits dans 54 langues.</p>
 			</div>
 			<div id="decorative" class="grid_5 omega">
-				<a class="internallink" data-slide="2" href="#slide2">Découvrir la répartition des aides accordées</a>
+				<a class="internallink" data-slide="2" href="#slide2">En savoir plus sur les titres aidés</a>
 			</div>
 
 		</div>
@@ -64,8 +64,8 @@
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h2>Répartition des aides entre 2008 et 2013</h2>
-                                <p>Répartition géographique des aides à la cession de droits accordées entre 2008 et 2013 par l'Institut français pour la traduction d'oeuvres d'auteurs français ou dédités par des éditeurs français.</p>
+				<h2>À travers le monde</h2>
+                                <p>Répartition géographique des aides à la cession de droits accordées entre 2008 et 2013 par l'Institut français pour la traduction d'œuvres d'auteurs français ou francophones.</p>
 			        <div id="map-container">
 			        <form id="map-search">
 			        <input name="q" id="q" type="text" class="inputtext" placeholder="année, auteur, titre, éditeur, ..."/><input type="submit" value="Rechercher"/>
@@ -104,12 +104,25 @@
 			  <?php include("grouptable.php"); ?>
                           </div>
 <script>
-   $('.tocartogram').click(function(e){
-       $('#q').val($(this).attr('data-q'));
-       $('#map-search').submit();
-       setTimeout(function(){goToByScroll('2');}, 100);
-       return false;
-   });
+$('.tocartogram').click(function(e){
+    $('#q').val($(this).attr('data-q'));
+    $('#map-search').submit();
+    setTimeout(function(){goToByScroll('2');}, 100);
+    return false;
+  });
+$("#langues").prepend("<div id=\"loupe\"></div>");
+$(".tags a").mouseover(function(e) {
+    text = $(this).attr("alt");
+    $("#loupe").css("display", "block");
+    $("#loupe").text(text);
+  });
+$(".tags a").mousemove(function(e) {
+    milieu = $("#loupe").width() / 2;
+    $("#loupe").css({left: e.clientX - milieu, top: e.clientY}); 
+  }); 
+$(".tags").mouseout(function() {
+    $("#loupe").css("display", "none");
+  }); 
 </script>
 			</div>
 
@@ -121,7 +134,8 @@
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
 	   <div class="container clearfix">  
 	      <div id="content" class="grid_12">
-	         <h2>Plus de 2&nbsp;500 ouvrages aidés depuis 2008</h2>
+	         <h2>Les données</h2>
+                 <p>Vous trouverez ci-dessous la liste exhaustive des titres soutenus par l'Institut français entre 2008 et 2013.</p>
 		        <div style="text-align: center;">
 			        <iframe scrolling="no" style="border: 0px; margin: auto;" width="100%" height="800" src="../datatable/datatable.php"></iframe>
 			</div>

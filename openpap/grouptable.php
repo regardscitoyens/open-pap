@@ -12,7 +12,7 @@ foreach($langues as $l => $nb) {
 echo "<div id='langues'><h3>Langues</h3><div class='tags'>";
 foreach($langues as $l => $nb) {
   if ($l) {
-    echo " <span class='tag".round($nb/$nbl*100)."'><a href='#' class='tocartogram' alt='$l ($nb)' data-slide='2' data-q='$l'>$l</a></span> &nbsp; ";
+    echo " <span class='tag".round($nb/$nbl*100)."'><a href='#' class='tocartogram' alt='$l : $nb traduction(s)' data-slide='2' data-q='$l'>$l</a></span> &nbsp; ";
   }
 }
 echo "</div></div>";
