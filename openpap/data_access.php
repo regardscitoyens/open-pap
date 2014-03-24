@@ -11,6 +11,7 @@ function select_data($element_id, $nb_id = 20, $q = '') {
       if (!$q || (($str = join(',', $data)) && preg_match('/'.$q.'/i', $str))) {
 	$data[20] = $i++;
         $data[$element_id] = preg_replace('/ \(.*/', '', $data[$element_id]);
+        $data[$element_id] = preg_replace('/ \/.*/', '', $data[$element_id]);
 	if (!isset($elements[$data[$element_id]])) {
 	  $elements[$data[$element_id]] = array($data[$nb_id] => 1);
 	}else{
