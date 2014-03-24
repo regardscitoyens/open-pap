@@ -33,7 +33,7 @@
 				<ul class="navigation">
 					<li data-slide="1">Accueil</li>
 					<li data-slide="2">À travers le monde</li>
-					<li data-slide="3">Genre et langues</li>
+					<li data-slide="3">Genres et langues</li>
 					<li data-slide="4">Les données</li>
 				</ul>
 			</div>
@@ -46,9 +46,9 @@
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
-				<h1>Le Programme d'Aide à la Publication</h1>
+				<h1>Les Programmes d'aide à la publication</h1>
 			        <p>L’Institut français soutient le travail et l’implication d’éditeurs étrangers qui mènent une politique de publication d'ouvrages traduits du français, rendant ainsi possible l’accès d’un public non francophone à la création et la pensée françaises contemporaines.</p>
-			        <p>Depuis 25 ans, les Programmes d'Aide à la Publication (PAP) ont permis de contribuer à la traduction de près de 20&nbsp;000 titres d’auteurs français dans 80 pays.</p>
+			        <p>Depuis 25 ans, les <a href="http://institutfrancais.com/fr/actualités/programmes-daide-la-publication-2013">Programmes d'aide à la publication (PAP)</a> ont permis de contribuer à la traduction de près de 20&nbsp;000 titres d’auteurs français dans 80 pays.</p>
 			        <p>Ce soutien à l’écrit est l’un des outils majeurs dans le développement de l’influence de la littérature et de la pensée françaises à travers le monde.</p>
 				<p>Les PAP ont soutenus plus de 2&nbsp;558 ouvrages depuis 2008. Ils ont permis à 1&nbsp;144 éditeurs étrangers de publier des titres traduits du français dans 63 pays 1&nbsp;294 auteurs français et francophones ont été traduits dans 54 langues.</p>
 			</div>
@@ -147,7 +147,7 @@ $(".tags").mouseout(function() {
 		<div class="container clearfix">
 			<div id="content" class="grid_9">
 				<h2>Credits</h2>
-                                <p>Le projet OpenPAP est un projet du <a href="http://www.institutfrancais.com/fr/livre-et-promotion-des-savoirs-0">département Livre et Promotion des savoirs</a> de l'<a href="http://www.institutfrancais.com/">Institut français</a>. Il a été réalisé techniquement par Regards Citoyens.</p>
+                                <p>Le projet OpenPAP est un projet du <a href="http://www.institutfrancais.com/fr/livre-et-promotion-des-savoirs-0">département Langue  française, livre et savoirs</a> de l'<a href="http://www.institutfrancais.com/">Institut français</a>. Il a été réalisé techniquement par Regards Citoyens.</p>
                                 <p>Les données utilisées pour réaliser ce travail sont <a href="data/data.csv">librement téléchargeable< sous la licence ODBL</a>.</p>
                                 <p><a href="http://jalxob.com/cool-kitten/">Cool kitten</a>, <a href="https://datatables.net/">DataTables</a>, <a href="https://github.com/shawnbot/d3-cartogram/">cartogram.js</a>, <a href="http://d3js.org/">d3.js</a>, <a href="http://github.com/mbostock/topojson" target="_blank">TopoJSON</a>, <a href="http://www.geonames.org" target="_blank">geonames.org</a> et <a href="http://colorbrewer2.org" target="_blank">colorbrewer</a> ont été utilisés.</p>
                                 <p>Les logiciels développés pour ce projet sont des logiciels libres téléchargeables sur <a href="https://github.com/regardscitoyens/open-pap">github</a>.</p>
