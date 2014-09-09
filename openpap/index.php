@@ -18,6 +18,8 @@
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery.flot.categories.js"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
 				<ul class="navigation">
 					<li data-slide="1">Accueil</li>
 					<li data-slide="2">À travers le monde</li>
-					<li data-slide="3">Genres et langues</li>
+					<li data-slide="3">Par pays</li>
 					<li data-slide="4">Les données</li>
 				</ul>
 			</div>
@@ -99,7 +101,119 @@
 	<div class="slide fondif" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h2>Genres et langues</h2>
+				    <h2>Les aides par pays</h2>
+				    <p>Voici un résumé des statistiques concernant les aides attribuées à des éditeurs : <select><option name="espagne">espagnols</option></select></h2>
+				    <div style="float: clear">
+				    <div id="editeursetr" class="grid_6" style="float: right; margin-top: -20px;">
+				    <h3>Les éditeurs étrangers aidés</h3>
+<ul>
+				    <li>Arena libros (9)</li>
+				    <li>Editorial Trotta (7)</li>
+				    <li>Pre-Textos (6)</li>
+				    <li>Demipage (6)</li>
+				    <li>Cabaret Voltaire (6)</li>
+				    <li>Gedisa (5)</li>
+				    <li>TROTTA (3)</li>
+				    <li>Pasos Perdidos (3)</li>
+				    <li>Libros del asteroide (3)</li>
+				    <li>Ediciones Alfabia (3)</li>
+				    <li>Trotta S.A (2)</li>
+</ul>
+				    </div>
+				    <div id="editeursfr" class="grid_6" style="float: none">
+				    <h3>Les éditeurs français aidés</h3>
+				    <ul>
+				    <li>Gallimard (18)</li>
+				    <li>Édition du Seuil (10)</li>
+				    <li>Galilée (7)</li>
+				    <li>Actes Sud (5)</li>
+				    <li>Verdier (4)</li>
+				    <li>Librairie Arthème Fayard (4)</li>
+				    <li>Flammarion (4)</li>
+				    <li>Stock (3)</li>
+				    <li>Grasset & Fasquelle (3)</li>
+				    <li>Édition de Minuit (3)</li>
+				    <li>Albin Michel (3)</li>
+				    </ul>
+				    </div>
+				    </div>
+				    <div style="float: clear">
+				    <div id="editeursfr" class="grid_6" style="float: right; margin-top: -20px;">	
+				    <h3>Le nombre d'aides par an</h3>
+				    <div id="graph" style="width:100%;height:200px;background-color: white; margin:20px">
+				    </div>
+<script>
+		var data = [ ["2008", 10], ["2009", 24], ["2010", 29], ["2011", 25], ["2012", 21], ["2013", 20] ];
+
+		$.plot("#graph", [ data ], {
+			series: {
+				bars: {
+					show: true,
+					barWidth: 0.6,
+					align: "center"
+				}
+			},
+			xaxis: {
+				mode: "categories",
+				tickLength: 0
+			}
+		});
+
+</script>
+</div>
+				    <div id="auteurs" class="grid_6" style="float: none">
+				    <h3>Les auteurs francophones traduits</h3>
+<ul>
+<li>Weil Simone</li>
+<li>Quignard Pascal</li>
+<li>Onfray Michel</li>
+<li>Modiano Patrick</li>
+<li>Levinas Emmanuel</li>
+<li>Jullien François</li>
+<li>Bergounioux Pierre</li>
+<li>Rolin Jean</li>
+<li>Ricœur Paul</li>
+<li>Dubet François</li>
+</ul>
+
+				    </div>
+				    </div>
+			</div>
+
+		</div>
+	</div>
+
+   
+
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	   <div class="container clearfix">  
+	      <div id="content" class="grid_12">
+	         <h2>Les données</h2>
+<div>
+<button class="datatable active" data-source="0" onclick="">PAP</button>
+<button class="datatable" data-source="1">Les livres traduits</button>
+<button class="datatable" data-source="2">Les traducteurs</button>
+<script>
+  $('button.datatable').click(function() {
+      $('button.active').removeClass('active');
+      $(this).addClass('active');
+      $('#framedatatable').attr('src', '../datatable/datatable.php?source='+$(this).attr('data-source'));
+      return false;
+    });
+</script>
+
+</div>
+		        <div style="text-align: center;">
+			        <iframe id='framedatatable' scrolling="no" style="border: 0px; margin: auto;" width="100%" height="800" src="../datatable/datatable.php"></iframe>
+			</div>
+              </div>
+	   </div>  
+	</div>
+	
+	<div class="slide fondif" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h2>Plus de stats</h2>
                           <div id="grouptable">
 			  <?php include("grouptable.php"); ?>
                           </div>
@@ -129,21 +243,7 @@ $(".tags").mouseout(function() {
 		</div>
 	</div>
 
-   
-
-	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-	   <div class="container clearfix">  
-	      <div id="content" class="grid_12">
-	         <h2>Les données</h2>
-                 <p>Vous trouverez ci-dessous la liste exhaustive des titres soutenus par l'Institut français entre 2008 et 2013.</p>
-		        <div style="text-align: center;">
-			        <iframe scrolling="no" style="border: 0px; margin: auto;" width="100%" height="800" src="../datatable/datatable.php"></iframe>
-			</div>
-              </div>
-	   </div>  
-	</div>
-	
-	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_9">
 				<h2>Credits</h2>

@@ -307,6 +307,23 @@ p {
 
 }
 
+button.active {    
+    background-color: #008AC9;
+    border-color: #008AC9;
+    border-radius: 4px;
+    color: #FFFFFF; 
+}
 
 
-
+#graph li
+{
+   position:absolute;	
+   list-style:none;
+   background:lightblue;
+   width:40px;
+   text-align:center;
+   border:1px solid black;
+   visibility: hidden;
+   background-color: yellow;
+   background-repeat:repeat-y;
+}
