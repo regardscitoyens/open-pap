@@ -32,11 +32,13 @@ th{color: #008AC9;}
 </style>
 <body>
 <?php if ($source == 1) : ?>
-<p>Vous trouverez ci-dessous des livres traduits qui ont été recensés par l'Institut français dans le cadre de son projet IFVerso.</p>
+<p>Vous trouverez ci-dessous des livres traduits qui ont été recensés par l'Institut français dans le cadre de son projet IFVerso (version de travail)</p>
+<p>Ces bases comprennent plus de 8 000 titres traduits du français dans certaines langues étrangères (arabe, chinois, espagnol, anglais). Elles couvrent des périodes variées et ne sont pas nécessairement exhaustives.</p>
 <?php else : if ($source == 2) : ?>
-<p>Vous trouverez ci-dessous des traducteurs de livre francophone qui ont été recensés par l'Institut français dans le cadre de son projet IFVerso.</p>
+<p>Vous trouverez ci-dessous les traducteurs de livres qui ont été recensés par l'Institut français dans le cadre de son projet IFVerso (version de travail)</p>
+<p>Ces bases comprennent plus de 8 000 titres traduits du français dans certaines langues étrangères (arabe, chinois, espagnol, anglais). Elles couvrent des périodes variées et ne sont pas nécessairement exhaustives.</p>
 <?php else : ?>
-<p>Vous trouverez ci-dessous la liste exhaustive des titres soutenus par l'Institut français entre 2008 et 2013.</p>
+<p>Vous trouverez ci-dessous la liste exhaustive des titres soutenus par l'Institut français entre 2008 et 2014.</p>
 <?php endif; ?>
 <?php endif; ?>
 
@@ -61,6 +63,7 @@ th{color: #008AC9;}
   <th width="150px">Langue de traduction</th>
   <th width="300px">Traducteur(s)</th>
   <th width="150px">Éditeur(s)</th>
+  <th width="120px">Pays</th>
 <?php else : ?>
 			<th width="60px">Année</th>
 			<th width="120px">Pays</th>
