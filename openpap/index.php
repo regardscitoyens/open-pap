@@ -189,12 +189,12 @@ $(".tags").mouseout(function() {
 			<div id="content" class="grid_9">
 				<h2>Credits</h2>
                                 <p>Le projet OpenPAP est un projet du <a href="http://www.institutfrancais.com/fr/livre-et-promotion-des-savoirs-0">département Langue  française, livre et savoirs</a> de l'<a href="http://www.institutfrancais.com/">Institut français</a>. Il a été réalisé techniquement par Regards Citoyens.</p>
-                                <p>Les données utilisées pour réaliser ce travail sont <a href="data/data.csv">librement téléchargeable< sous la licence ODBL</a>.</p>
+                                <p>Les données utilisées pour réaliser ce travail sont <a href="data/data.csv">librement téléchargeables</a> sous la <a href="http://vvlibri.org/fr/licence/odbl/10/fr">licence ODBL</a>.</p>
                                 <p><a href="http://jalxob.com/cool-kitten/">Cool kitten</a>, <a href="https://datatables.net/">DataTables</a>, <a href="https://github.com/shawnbot/d3-cartogram/">cartogram.js</a>, <a href="http://d3js.org/">d3.js</a>, <a href="http://github.com/mbostock/topojson" target="_blank">TopoJSON</a>, <a href="http://www.geonames.org" target="_blank">geonames.org</a>, <a href="http://www.flotcharts.org/" target="_blank">jQuery Flot</a> et <a href="http://colorbrewer2.org" target="_blank">colorbrewer</a> ont été utilisés.</p>
                                 <p>Les logiciels développés pour ce projet sont des logiciels libres téléchargeables sur <a href="https://github.com/regardscitoyens/open-pap">github</a>.</p>
-  <p>Remerciements : Didier Dutour, Edgar Dodero, Bérénice Guidat, Nathalie Philippe, Sébastien Ravut, ...</p>
+  <p>Remerciements&nbsp;: Didier Dutour, Edgar Dodero, Bérénice Guidat, Nathalie Philippe, Sébastien Ravut...</p>
 
-  <p>Pour tout renseignement complémentaire ou si vous souhaitez alimenter ces informations : opendatalivre(a)institutfrancais.com</p>
+  <p>Pour tout renseignement complémentaire ou si vous souhaitez alimenter ces informations&nbsp;: opendatalivre&nbsp;(a)&nbsp;institutfrancais.com</p>
 			</div>
 
 		</div>
